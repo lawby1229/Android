@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="hello">Hello World, 欢迎来到约炮神器！</string>
+    <string name="app_name">路人神器</string>
+    <string name="app">appID</string>
+    
+    
+    <string name="login">登陆</string>
+    <string name="regist">注册</string>
+    <string name="userid">用户ID：</string>
+    <string name="userid_hint">数字/字母</string>
+    <string name="username">用户昵称：</string>
+    <string name="username_hint">任意字符</string>
+    <string name="password">密码：</string>
+    <string name="password_hint">长度大于6位</string>
+    <string name="password_again">确认密码：</string>
+    <string name="password_again_hint">再次输入密码</string>
+    <string name="exit">退出</string>
+    <string name="about">关于</string>
+    
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    
+    <string name="update">更新</string>
+    
+    <string-array name="sex_filter">
+        <item>直男</item>
+        <item>直女</item>
+        <item>男同志</item>
+        <item>女同志</item>
+        <item>男双</item>
+        <item>女双</item>
+    </string-array>
+    <string name="sex">性别：</string>
+    <string name="sex_hint"></string>
+    <string name="city">地区：</string>
+    <string name="city_hint">国家/城市</string>
+    <string name="age">年龄：</string>
+     <string name="age_hint">年龄：</string>
+    <string name="career">职业：</string>
+    <string name="career_hint">职业：</string>
+    <string name="connection_problem">网络故障</string>
+    <string name="connection_exception">网络连接异常</string>
+    <string name="unknown_exception">未知异常</string>
+    <string name="registery_successed">注册成功</string>
+    <string name="logout">登出</string>
+    <string name="send">发送</string>
+</resources>

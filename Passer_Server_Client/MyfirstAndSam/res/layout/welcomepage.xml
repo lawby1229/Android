@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/wp_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/wp_bt_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/wp_tv_username"
+            android:layout_alignParentRight="true"
+            android:text="@string/update" />
+
+        <QuickContactBadge
+            android:id="@+id/quickContactBadge1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wp_tv_username" />
+
+        <Button
+            android:id="@+id/wp_bt_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/wp_tv_username"
+            android:layout_toLeftOf="@+id/wp_bt_update"
+            android:text="@string/logout" />
+
+        <TextView
+            android:id="@+id/wp_tv_longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/wp_bt_update"
+            android:ems="10"
+            android:inputType="numberDecimal" 
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+       
+
+        <TextView
+            android:id="@+id/wp_tv_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/wp_tv_longitude"
+            android:ems="10"
+            android:inputType="numberDecimal" 
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+  
+
+    </RelativeLayout>
+
+
+  
+        <ListView
+        android:id="@+id/welcomepage_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="#00000000"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:stackFromBottom="true" />
+<!-- 
+    <com.google.android.maps.MapView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:apiKey="asdfssdfsfdsfsfdsfsdfsdf" /> -->
+
+</LinearLayout>

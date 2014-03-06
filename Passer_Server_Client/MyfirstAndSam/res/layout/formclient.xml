@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/formclient_ly_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ProgressBar
+            android:id="@+id/formclient_pb"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="10.0dip"
+            android:max="100"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formclient_ly_down"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF000000" >
+
+        <EditText
+            android:id="@+id/formclient_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:hint="請輸入內容"
+            android:inputType="textWebEditText"
+            android:text="" />
+
+        <Button
+            android:id="@+id/formclient_btsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="發送" />
+
+        <Button
+            android:id="@+id/formclient_btattach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附加" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/formclient_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/formclient_ly_down"
+        android:layout_below="@id/formclient_ly_up"
+        android:layout_weight="1.0"
+        android:background="#00000000"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:stackFromBottom="true" />
+
+</RelativeLayout>
